@@ -1,0 +1,495 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+
+nav ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    text-align: center;
+
+}
+
+
+
+nav ul li {
+
+    display: inline;
+
+    margin: 0 15px;
+
+}
+
+
+
+nav ul li a {
+
+    color: rgb(255, 255, 255);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+nav ul li a2 {
+
+    color: rgb(0, 0, 0);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+.hero-section {   /* Fond de l'ecrant d'acceuil */
+
+    background: url('Image/fond1.jpg') no-repeat center center;
+
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: rgb(242, 242, 242);
+
+    position: fixed;
+
+    z-index: 1;
+
+}
+
+
+
+.hero-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    background: rgba(250, 249, 249, 0); /* Optionnel : pour ajouter un filtre sombre */
+
+    z-index: -1;
+
+}
+
+.hero-section2 {   /* Fond de l'ecrant d'acceuil */
+
+    background: url('Image/fond3.jpg') no-repeat center center;
+
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: rgba(253, 253, 253, 0);
+
+    position: fixed;
+
+    z-index: 1;
+
+}
+.hero-section3 {   /* Fond de l'ecrant d'acceuil */
+
+    background: url('Image/fond2.jpg') no-repeat center center;
+
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    position: fixed;
+
+    z-index: 1;
+
+}
+
+.hero-section4 {   /* Fond de l'ecrant d'acceuil */
+
+    background: url('Image/fond4.jpg') no-repeat center center;
+
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    position: fixed;
+
+    z-index: 1;
+
+}
+
+.hero-section5 {   /* Fond de l'ecrant d'acceuil */
+
+    background: url('Image/fond5.jpg') no-repeat center center;
+
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    position: fixed;
+
+    z-index: 1;
+
+}
+
+
+
+
+
+
+.hero-content {
+
+    z-index: auto;
+
+}
+
+
+
+main {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+}
+
+
+
+.content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+
+h1, h2, p {
+
+    margin: 0 0 20px 0;
+
+}
+
+
+
+.content h2 {
+
+    margin-top: 40px;
+
+}
+
+.color-change-button {
+    background-color: #30303000; /* Couleur de fond initiale */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition pour un effet de changement de couleur fluide */
+    border-radius: 12px; /* Arrondir les coins */
+}
+
+.color-change-button:hover {
+    background-color: #000000; /* Couleur de fond au survol */
+    color: rgb(255, 255, 255);
+    border-radius: 12px; /* Arrondir les coins */
+}
+
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('votre-image.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.packs {
+    display: flex;
+    justify-content: center; /* Centre les packs horizontalement */
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0); /* Optionnel: fond léger pour les packs */
+}
+
+.pack {
+    width: 45%; /* Ajuste la largeur pour que deux packs puissent tenir côte à côte */
+    max-width: 300px; /* Limite la largeur maximale des packs */
+    margin: 10px; /* Ajoute de l'espace entre les packs */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    text-align: center;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    color: black;
+    transition: transform 0.3s ease; /* Ajoute une transition pour un effet de zoom */
+}
+
+.pack h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.pack p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.pack .btn {
+    padding: 5px 10px; /* Réduit la taille du bouton */
+    font-size: 0.9em; /* Réduit la taille du texte */
+    color: white;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pack .btn:hover {
+    background-color: #e68900;
+}
+
+.pack .pack-image {
+    display: none; /* Cache l'image par défaut */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste l'image pour couvrir toute la zone */
+    border-radius: 10px; /* Applique les mêmes coins arrondis que le pack */
+    z-index: 1; /* S'assure que l'image est devant le texte */
+}
+
+.pack:hover .pack-image {
+    display: block; /* Affiche l'image au survol */
+}
+
+.pack .pack-content {
+    position: relative;
+    z-index: 2; /* S'assure que le texte est devant l'image */
+    color: black;
+}.modal {
+    display: none; /* Cacher la modale par défaut */
+    position: fixed;
+    z-index: 10; /* Doit être supérieur à tous les autres contenus */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.close {
+    color: #ff0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+.about {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
